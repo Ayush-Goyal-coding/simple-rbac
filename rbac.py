@@ -12,7 +12,7 @@ class RBAC:
                                                  user_type=UserType.ADMIN_USER)
         self._currentUser = admin_user
 
-    def get_current_user(self):
+    def _get_current_user(self):
         return self._currentUser
 
     def is_admin(self):

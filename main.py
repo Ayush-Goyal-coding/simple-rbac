@@ -1,7 +1,7 @@
 from rbac import RBAC
 from models.models import Role,ResourcesType
 rbac = RBAC()
-print(str(rbac.get_current_user()))
+print(str(rbac._get_current_user()))
 # rbac.logout()
 
 user1 = rbac.create_user("ayush", "password")
